@@ -41,6 +41,17 @@ app.get('/', (req, res) => {
       const newNote = req.body;
       newNote.id = uuidv4();
       notes.push(newNote);
+
+      fs.writeFile('./db.json', JSON.stringify(notes, null, 2), (err) => {
+        if (err) {
+          console.error(err);
+          res.status(500).json({ error: 'Internal server error' });
+          return;
+        }
+        res.json(newNote);
+      });
+    });
+  });
   
   app.listen(PORT, () => {
     console.log(`Listening for requests on port ${PORT}!`);
