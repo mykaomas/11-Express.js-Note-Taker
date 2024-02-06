@@ -25,6 +25,8 @@ To run the application locally:
 4. Start the Express server by running npm start.
 5. Access the application through your web browser at http://localhost:3000.
 
+or access the application with this [link](https://vast-caverns-47092-7abfcf9df561.herokuapp.com/)
+
 ## File Structure
 public: Contains static HTML, CSS, and client-side JavaScript files.
 server.js: Sets up the Express server and defines API endpoints.
