@@ -1,6 +1,16 @@
 [
-    {
-        "title":"Welcome!",
-        "text":"Note taker"
-    }
+  {
+    "title": "Welcome!",
+    "text": "Note taker"
+  },
+  {
+    "title": "Laundry",
+    "text": "2-6",
+    "id": "70bdad69-bee7-4163-beea-9c78f9472490"
+  },
+  {
+    "title": "home",
+    "text": "is where the heart is",
+    "id": "24701b41-896b-4ea3-835e-9a7d32cb7357"
+  }
 ]

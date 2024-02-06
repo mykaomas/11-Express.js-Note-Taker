@@ -36,8 +36,12 @@ app.get('/', (req, res) => {
         res.status(500).json({ error: 'Internal server error' });
         return;
       }
-  
 
+      const notes = JSON.parse(data);
+      const newNote = req.body;
+      newNote.id = uuidv4();
+      notes.push(newNote);
+  
   app.listen(PORT, () => {
     console.log(`Listening for requests on port ${PORT}!`);
   });
